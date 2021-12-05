@@ -50,17 +50,28 @@
                                     <constraint firstItem="CNc-pO-SdV" firstAttribute="top" secondItem="QKh-9F-WK5" secondAttribute="top" id="bTg-f0-JRn"/>
                                 </constraints>
                             </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lfs-mZ-Zpp">
+                                <rect key="frame" x="52" y="227" width="216" height="114"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="79"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstItem="QKh-9F-WK5" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="BiB-3q-xua"/>
                             <constraint firstItem="QKh-9F-WK5" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.75" id="DFu-Kp-EaE"/>
+                            <constraint firstItem="lfs-mZ-Zpp" firstAttribute="width" secondItem="QKh-9F-WK5" secondAttribute="width" multiplier="0.9" id="Sbr-2y-WsO"/>
+                            <constraint firstItem="lfs-mZ-Zpp" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="Sm8-c9-u1a"/>
+                            <constraint firstItem="lfs-mZ-Zpp" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="WhV-jm-yu8"/>
                             <constraint firstItem="QKh-9F-WK5" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="Xdq-q1-elI"/>
+                            <constraint firstItem="lfs-mZ-Zpp" firstAttribute="height" secondItem="QKh-9F-WK5" secondAttribute="height" multiplier="0.25" id="siL-6P-Ddc"/>
                             <constraint firstItem="QKh-9F-WK5" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.8" id="vns-QE-xnk"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
+                        <outlet property="labelNumber" destination="lfs-mZ-Zpp" id="gYS-vl-ZsQ"/>
                         <outlet property="labelnames" destination="CNc-pO-SdV" id="URJ-87-4uX"/>
                     </connections>
                 </viewController>
